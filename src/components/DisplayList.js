@@ -7,7 +7,7 @@ export default function DisplayList({ listContainer, setListContainer }) {
   };
   const displayList = listContainer.map((item, index) => (
     <div className="display-list">
-      <li key={index}>{item}</li>
+      <li className='li-style'key={index}>{item}</li>
       <button className="delete-button" onClick={() => removeItem(index)}>
         Delete
       </button>

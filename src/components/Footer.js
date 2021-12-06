@@ -1,5 +1,4 @@
 import "./FooterStyle.css";
-import { Link } from "react-router-dom";
 export default function Footer(props) {
   const clearList = () => {
     props.setListContainer([]);
