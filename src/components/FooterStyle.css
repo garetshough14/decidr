@@ -1,4 +1,5 @@
 .button-style{
+    font-weight: bold;
     color:#fff;
     border-radius: 8px;
     padding-top: 5px;
@@ -8,12 +9,14 @@
     background-color:#715288;
 }
 div{
-    background-color: grey;
     width: 100%;
     height: 100%;
 }
-.container{  
+.container{
+    border-top: 5px solid black;
+    padding: 20px;  
     background-color:grey; 
     display: flex;
     justify-content: center;
+    position: sticky;
 }

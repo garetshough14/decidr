@@ -16,6 +16,5 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: radial-gradient(#082246, #01070e);
     color: #cdcdcd;
 }

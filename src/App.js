@@ -1,7 +1,5 @@
 import "./App.css";
 import { useState } from "react";
-// import AddItem from "./components/AddItem";
-// import DisplayList from "./components/DisplayList";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
@@ -17,16 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Content
         setListContainer={setListContainer}
         listContainer={listContainer}
         selectedItem={selectedItem}
       />
-      <Footer
-        selectItem={selectItem}
-        setListContainer={setListContainer}
-      />
+      <Footer selectItem={selectItem} setListContainer={setListContainer} />
     </div>
   );
 }
