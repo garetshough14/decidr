@@ -9,9 +9,10 @@ const formSubmit = (event) => {
     setNewItem('');
 ;
 }
-
     return(
-        <form onSubmit={formSubmit}>
+        <form 
+            className="form"
+            onSubmit={formSubmit}>
             <input 
                 id="add-item" 
                 value={newItem} 

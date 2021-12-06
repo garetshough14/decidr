@@ -1,20 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-import {useState} from 'react';
-import AddItem from './components/AddItem';
+import "./App.css";
+import { useState } from "react";
+// import AddItem from "./components/AddItem";
+// import DisplayList from "./components/DisplayList";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Content from "./components/Content";
 
 function App() {
-  const [listContainer,setListContainer] = useState([]);
+  const [listContainer, setListContainer] = useState([]);
+  const [selectedItem, setSelectedItem] = useState("");
 
-  console.log(listContainer)
+  const selectItem = () => {
+    const random = Math.floor(Math.random() * listContainer.length);
+    setSelectedItem(listContainer.length > 0 ? listContainer[random] : "");
+  };
+
   return (
     <div className="App">
-      <header>
-        Decidr
-      </header>
-      <AddItem
-        listContainer={listContainer} 
-        setListContainer = {setListContainer}
+      <Header/>
+      <Content
+        setListContainer={setListContainer}
+        listContainer={listContainer}
+        selectedItem={selectedItem}
+      />
+      <Footer
+        selectItem={selectItem}
       />
     </div>
   );
