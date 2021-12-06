@@ -1,5 +1,9 @@
-main{
-    overflow:auto;
+.main-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 2;
+    overflow: auto;
 }
 .selected-item{
     display: flex;
@@ -18,4 +22,7 @@ button{
 }
 .space-between-button{
     margin-right: 15px;
+}
+.content{
+    flex: 2;
 }

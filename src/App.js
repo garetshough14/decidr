@@ -17,6 +17,7 @@ function App() {
     <div className="App">
       <Header />
       <Content
+        setSelectedItem={setSelectedItem}
         setListContainer={setListContainer}
         listContainer={listContainer}
         selectedItem={selectedItem}

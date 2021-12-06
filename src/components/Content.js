@@ -3,15 +3,16 @@ import DisplayList from "./DisplayList";
 import AddItem from "./AddItem";
 export default function Content(props) {
   return (
-    <main>
+    <main className='main-style'>
       <AddItem
         setListContainer={props.setListContainer}
         listContainer={props.listContainer}
       />
+      <div className='content'>
       {props.selectedItem.length > 0 ? (
         <div className="selected-item">
           <p className="space-between-button">{props.selectedItem}</p>
-          <button> Done </button>
+          <button onClick={()=>props.setSelectedItem('')}> Done </button>
         </div>
       ) : (
         <DisplayList
@@ -19,6 +20,7 @@ export default function Content(props) {
           setListContainer={props.setListContainer}
         />
       )}
+      </div>
     </main>
   );
 }

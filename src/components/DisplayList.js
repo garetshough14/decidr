@@ -15,7 +15,7 @@ export default function DisplayList({ listContainer, setListContainer }) {
   ));
   return (
     <div className="list-container">
-      <ol>{displayList}</ol>
+      <ol className="list">{displayList}</ol>
     </div>
   );
 }
