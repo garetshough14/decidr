@@ -25,6 +25,7 @@ function App() {
       />
       <Footer
         selectItem={selectItem}
+        setListContainer={setListContainer}
       />
     </div>
   );
