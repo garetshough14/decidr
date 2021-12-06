@@ -10,3 +10,12 @@ form{
     display: flex;
     justify-content: center;
 }
+.app{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: radial-gradient(#082246, #01070e);
+    color: #cdcdcd;
+}

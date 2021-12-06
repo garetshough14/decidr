@@ -1,3 +1,4 @@
+import "./AddItemStyle.css";
 import {useState} from 'react';
 
 export default function AddItem({listContainer,setListContainer}){
@@ -18,7 +19,8 @@ const formSubmit = (event) => {
                 value={newItem} 
                 onChange={event => setNewItem(event.target.value)}
                 placeholder="Add a new item"/>
-            <button 
+            <button
+            className="add-item-button"
             type="submit"
             onClick={formSubmit}
             >Add Item</button>

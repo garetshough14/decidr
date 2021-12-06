@@ -1,3 +1,4 @@
+import './contentStyle.css'
 import DisplayList from "./DisplayList"
 import AddItem from "./AddItem"
 export default function Content(props) {
@@ -9,7 +10,7 @@ export default function Content(props) {
           listContainer={props.listContainer}
         />
         {props.selectedItem.length > 0 ? (
-          <p>{props.selectedItem}</p>
+          <p className="selected-item">{props.selectedItem}</p>
         ) : (
           <DisplayList 
             listContainer={props.listContainer}
