@@ -12,7 +12,9 @@ export default function Content(props) {
           <p>{props.selectedItem}</p>
         ) : (
           <DisplayList 
-            listContainer={props.listContainer} />
+            listContainer={props.listContainer}
+            setListContainer={props.setListContainer}
+            />
         )}
       </main>
     )
